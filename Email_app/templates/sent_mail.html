@@ -1,0 +1,28 @@
+{% extends 'basic.html' %}
+{% block CSS %} 
+<style>
+.container{
+    text-align: center;
+    
+}
+body{
+    background: bisque;
+}
+</style>
+{% endblock %}
+{% block body %} 
+
+    <div class="container">
+        <div style="margin: 130px;">
+            
+            <p>A mail with verification token has been sent on your </p>
+            <p></p>
+             <h4>Gmail: {{request.user.email}}</h4> 
+            <p>Kindly check your mail and verify to signup</p>
+            <a href="/"><button class="btn btn-lg btn-primary btn-block" type="submit" style="width: 40%;">Login</button> </a>
+        </div>
+      
+    </div>
+
+
+{% endblock %}
